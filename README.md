@@ -1,2 +1,2 @@
 # odin-signup-form
-A sign-up form created using HTML and CSS for The Odin Project. 
+This is a project for The Odin Project. The goal is to create a sign-up form using HTML and CSS. 
