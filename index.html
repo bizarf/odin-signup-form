@@ -5,14 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Odin Project - Project: Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div>
-        <h2>This is a test</h2>
-        <p>test</p>
+    <div id="container">
+        <div id="logo-side">
+            <div id="logo"><img id="odin-logo" src="images/odin-lined.png" alt="The Odin Project Logo"
+                    draggable="false">Odin</div>
+            <div id="image-credit">Photo by <a href="https://unsplash.com/@sickhews">Wes Hicks</a> on <a
+                    href="https://unsplash.com/photos/lY2ayo1i4pM">Unsplash</a></div>
+        </div>
+        <div id="header">
+            <h3>
+                This is not a real online service! You know you need something like this in your life to help you
+                realize
+                your deepest dreams.<br>
+                Sign up now to get started.<br><br>
+                You know you want to.
+            </h3>
+        </div>
+        <div id="registration-form">
+            <h3 class="main-body">Let's do this!</h3>
+            <form action="">
+                <div id="main-form" class="main-body">
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div>
+                        <label for=" last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone-num">Phone Number</label>
+                        <input type="tel" name="phone-num" id="phone-num">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </div>
+                <div id="submit-btn" class="main-body">
+                    <div><input type="submit" value="Create Account"></div>
+                    <br>
+                    Already have an account? <a href="">Log in</a>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
