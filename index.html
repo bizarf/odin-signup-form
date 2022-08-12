@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Odin Project - Project: Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         </div>
         <div id="registration-form">
             <h3 class="main-body">Let's do this!</h3>
-            <form action="">
+            <form action="" onsubmit="return passCheck()">
                 <div id="main-form" class="main-body">
                     <div>
                         <label for="first-name">First Name</label>
@@ -44,7 +45,7 @@
                     </div>
                     <div>
                         <label for="phone-num">Phone Number</label>
-                        <input type="tel" name="phone-num" id="phone-num">
+                        <input type="tel" name="phone-num" id="phone-num" required>
                     </div>
                     <div>
                         <label for="password">Password</label>
@@ -53,10 +54,12 @@
                     <div>
                         <label for="confirm-password">Confirm Password</label>
                         <input type="password" name="confirm-password" id="confirm-password" required>
+                        <span></span>
                     </div>
                 </div>
                 <div id="submit-btn" class="main-body">
-                    <div><input type="submit" value="Create Account"></div>
+                    <div><input type="submit" value="Create Account" id="submit-button">
+                    </div>
                     <br>
                     Already have an account? <a href="">Log in</a>
                 </div>

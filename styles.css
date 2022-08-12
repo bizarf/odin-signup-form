@@ -23,6 +23,8 @@ body {
 
 #header {
     background-color: wheat;
+    display: flex;
+    align-items: center;
 }
 
 #logo-side {
@@ -79,8 +81,23 @@ label {
     display: block;
 }
 
+label {
+    font-size: 14px;
+}
+
 input {
     border: solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+input:focus:invalid {
+    border: 1px solid red;
 }
 
 /* creates the two column design for the form when viewed on a desktop */
@@ -102,9 +119,24 @@ input {
 #submit-btn input[type="submit"] {
     background-color: royalblue;
     color: white;
-    width: 20%;
+    width: auto;
     border-style: none;
     border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.valid-pass,
+.valid-pass:focus {
+    border: 1px solid blue;
+}
+
+.invalid-pass,
+.invalid-pass:focus {
+    border: 1px solid red;
+}
+
+.invalid-pass+span::after {
+    content: "* Passwords do not match";
+    font-size: 10px;
+    color: red;
 }
